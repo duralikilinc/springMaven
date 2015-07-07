@@ -1,4 +1,4 @@
-package deneme.spring.maven.controller;
+package info.spring.maven.controller;
 
 import static org.junit.Assert.*;
 
@@ -94,9 +94,9 @@ public class UserControllerTest {
 	}
 	
 	@Test
-	public void addUserTest(Model model,HttpServletRequest req){
+	public void addUserTest(HttpServletRequest req){
 	req=null;	
-	con.addUser(model, req);
+	con.addUser(req);
 	fail("Not yet implemented");
 	
 }

@@ -1,8 +1,8 @@
-package deneme.spring.maven.Service;
+package info.spring.maven.model;
 
 import static org.junit.Assert.*;
+import junit.framework.TestCase;
 import info.spring.maven.Model.User;
-import info.spring.maven.Service.UserService;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -10,12 +10,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class UserServiceTest {
+public class UserModelTest extends TestCase {
 
-	
-	 UserService uservice=new UserService();
-	 User user=new User();
-	 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -34,9 +30,11 @@ public class UserServiceTest {
 
 	@Test
 	public void test() {
-		uservice.addUser(user);
-		uservice.listUser();
-		
+		User user=new User();
+		user.setName("deneme");
+		user.setSurname("deneme2");
+		user.setPhone("321654987");
+
 		fail("Not yet implemented");
 	}
 
